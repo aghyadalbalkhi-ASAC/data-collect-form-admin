@@ -102,14 +102,16 @@ handelSearchDate =()=>{
     render(){
         
         let rounds=[];
-        let roundsnum = rounds.length;
+        let roundsnum = 0;
         if(! this.state.searchstatus){
+            roundsnum =rounds.length;
             rounds =this.state.round.map( round => {
                 return <Row round={round} />
         });
     
     }else{
             rounds =this.state.searchres.map( round => {
+                roundsnum =rounds.length;
             return <Row round={round} />
         });
     }

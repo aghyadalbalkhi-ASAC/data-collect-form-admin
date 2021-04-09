@@ -83,7 +83,7 @@ class Login extends Component {
                                     <FormGroup row>
                                         <Label htmlFor="password" md={12}>كلمة المرور</Label>
                                             <Col md={{size: 4,offset:8}}>
-                                                <Input type="text" id="password" name="password"
+                                                <Input type="password" id="password" name="password"
                                                     value={this.state.credentials.password}
                                                     valid={''}
                                                     invalid={''}
