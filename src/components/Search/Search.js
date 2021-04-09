@@ -32,12 +32,7 @@ class Search extends Component {
 
     inputChanged = event =>{
         const cred = this.state.credentials;
-        
-        if(event.target.name ==="searchField"){
-            cred[event.target.name] = (event.target.value).str.trim();
-        }else{
         cred[event.target.name] = event.target.value;
-        }
         this.setState({credentials : cred});
         console.log(this.state.credentials);
     }
