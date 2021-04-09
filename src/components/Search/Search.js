@@ -17,7 +17,7 @@ class Search extends Component {
     }
 
     loadData = event =>{
-        fetch('http://localhost:3031/rounds',{
+        fetch('https://abd-ali-form.herokuapp.com/rounds',{
             method:'GET',
         })
         .then(data =>data.json())
@@ -39,7 +39,7 @@ class Search extends Component {
 
     handelSearch =()=>{
         if (this.state.credentials.searchField !==''){
-            let url = `http://localhost:3031/search`;
+            let url = `https://abd-ali-form.herokuapp.com/search`;
             fetch(url,
             {
                 body: JSON.stringify(this.state.credentials),
@@ -63,7 +63,7 @@ class Search extends Component {
 
 handelSearchDate =()=>{
     if (this.state.credentials.dobFrom !=='' && this.state.credentials.dobTo !==''){
-        let url = `http://localhost:3031/search`;
+        let url = `https://abd-ali-form.herokuapp.com/search`;
         fetch(url,
         {
             body: JSON.stringify(this.state.credentials),
