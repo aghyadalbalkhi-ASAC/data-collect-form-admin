@@ -11,7 +11,7 @@ class Login extends Component {
     }
 
     login = event =>{
-        fetch('http://localhost:3031/login',{
+        fetch('https://abd-ali-form.herokuapp.com/login',{
             method:'POST',
             
             body:JSON.stringify(this.state.credentials)
