@@ -102,7 +102,7 @@ handelSearchDate =()=>{
     render(){
         
         let rounds=[];
-
+        let roundsnum = rounds.length;
         if(! this.state.searchstatus){
             rounds =this.state.round.map( round => {
                 return <Row round={round} />
@@ -184,7 +184,10 @@ handelSearchDate =()=>{
 
             <br></br> <br></br>
             <br></br>
-
+            <div>
+                {roundsnum}：  عدد الجولات 
+            </div>
+            <br></br> <br></br>
             <Table className='specialTable' striped bordered hover size="sm">
                     <thead>
                         <tr>
@@ -203,6 +206,7 @@ handelSearchDate =()=>{
                         {rounds}
                     </tbody>
             </Table>
+
             </>
         );
     }
