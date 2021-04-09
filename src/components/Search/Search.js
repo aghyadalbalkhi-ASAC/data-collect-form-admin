@@ -144,9 +144,6 @@ handelSearchDate =()=>{
                                 value={this.state.typeofsearch}
                                 onChange={this.inputChanged}>
                             <option value="idnum">رقم الاثبات</option>
-                            <option value="telnum">الجوال</option>
-                            <option value="namesofobservers">اسم المراقب</option>
-                            <option value="ownerName">اسم صاحب النشاط</option>
                         </Input>
                     </Col>
                     <Col md={{size: 2}}>
