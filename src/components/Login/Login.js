@@ -67,38 +67,40 @@ class Login extends Component {
             <br></br>
 
             <div className="container">
-                <div className="specialinput" className="row row-content">
-                    <Form onSubmit={this.login}>
-                        <FormGroup row>
-                            <Label htmlFor="username" md={12}>Your Username</Label>
-                                <Col md={12}>
-                                    <Input type="text" id="username" name="username"
-                                        value={this.state.credentials.username}
-                                        valid={''}
-                                        invalid={''}
-                                        onChange={this.inputChanged} />
-                                </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                            <Label htmlFor="password" md={12}>Your password</Label>
-                                <Col md={12}>
-                                    <Input type="text" id="password" name="password"
-                                        value={this.state.credentials.password}
-                                        valid={''}
-                                        invalid={''}
-                                        onChange={this.inputChanged} />
-                                </Col>
-                        </FormGroup>
-                        <FormGroup row>
-                                <Col md={{size: 10, offset: 0}}>
-                                    <Button type="submit" color="primary">
-                                        Login
-                                    </Button>
-                                </Col>
-                            </FormGroup>
-                    </Form>
-                </div>
-            </div>
+                            <div className="specialinput" className="row row-content">
+                            <div className="col-12" >
+                                <Form onSubmit={this.login}>
+                                    <FormGroup row>
+                                        <Label htmlFor="username" md={12}>اسم المستخدم</Label>
+                                            <Col md={{size: 4,offset:8}}>
+                                                <Input type="text" id="username" name="username"
+                                                    value={this.state.credentials.username}
+                                                    valid={''}
+                                                    invalid={''}
+                                                    onChange={this.inputChanged} />
+                                            </Col>
+                                    </FormGroup>
+                                    <FormGroup row>
+                                        <Label htmlFor="password" md={12}>كلمة المرور</Label>
+                                            <Col md={{size: 4,offset:8}}>
+                                                <Input type="text" id="password" name="password"
+                                                    value={this.state.credentials.password}
+                                                    valid={''}
+                                                    invalid={''}
+                                                    onChange={this.inputChanged} />
+                                            </Col>
+                                    </FormGroup>
+                                    <FormGroup row>
+                                            <Col md={{size: 4, offset: 8}}>
+                                                <Button type="submit" color="primary">
+                                                    تسجيل الدخول
+                                                </Button>
+                                            </Col>
+                                    </FormGroup>
+                                </Form>
+                            </div>
+                        </div>
+                    </div>
             </>
         );
     }
