@@ -22,6 +22,8 @@ class Login extends Component {
                 console.log(data);
                 if(data ==='ok'){
                     this.setState({ redirect: "/search" });                    
+                }else{
+                    alert('يرجى ادخال المعلومات بشكل صحيح')
                 }
             }
         ).catch(error => console.log("here",error));
