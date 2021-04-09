@@ -143,7 +143,7 @@ handelSearchDate =()=>{
                                 required
                                 value={this.state.typeofsearch}
                                 onChange={this.inputChanged}>
-                            <option value="idnum">رقمه</option>
+                            <option value="idnum">رقم الاثبات</option>
                             <option value="telnum">الجوال</option>
                             <option value="namesofobservers">اسم المراقب</option>
                             <option value="ownerName">اسم صاحب النشاط</option>
@@ -197,7 +197,7 @@ handelSearchDate =()=>{
                         <th>الملاحظات</th>
                         <th>جوال</th>
                         <th>تاريخ الجولة</th>
-                        <th>رقم الاثبات</th>
+                        <th>رقمه</th>
                         <th>نوع الاثبات</th>
                         <th>اسم صاحب النشاط</th>
                         <th>نوع النشاط</th>
